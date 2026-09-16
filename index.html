@@ -5,24 +5,24 @@
 <title>Allen Patnaik — Deep Learning, Computer Vision &amp; Remote Sensing</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="description" content="Allen Patnaik — PhD, Signal Processing and Machine Learning, IIT Guwahati. Research in deep learning, computer vision, and remote sensing image super-resolution."/>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%2310211D'/%3E%3Cpath d='M4 15c2-3 4-3 6-1s4 2 6-1 3-4 4-3' stroke='%2386B366' stroke-width='1.8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%23EEF4EC'/%3E%3Cpath d='M4 15c2-3 4-3 6-1s4 2 6-1 3-4 4-3' stroke='%233F7A32' stroke-width='1.8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#10211D;
-    --bg-deep:#0C1917;
-    --surface:#1C362E;
-    --surface-2:#224035;
-    --border:rgba(239,245,241,0.12);
-    --ink:#EFF5F1;
-    --muted:#9FB6AC;
-    --muted-2:#7C9A8F;
-    --veg:#86B366;
-    --soil:#D69A54;
-    --spectral:#6DB8D8;
-    --focus:#E8C468;
+    --bg:#FAFBF8;
+    --bg-deep:#EFF3ED;
+    --surface:#FFFFFF;
+    --surface-2:#EEF4EC;
+    --border:rgba(22,36,28,0.10);
+    --ink:#182420;
+    --muted:#54655B;
+    --muted-2:#748577;
+    --veg:#3F7A32;
+    --soil:#A6642A;
+    --spectral:#1479A6;
+    --focus:#A6642A;
     --maxw:880px;
   }
   *{box-sizing:border-box;}
@@ -51,7 +51,7 @@
   /* ---------- Nav ---------- */
   header.site-nav{
     position:sticky;top:0;z-index:50;
-    background:rgba(16,33,29,0.88);
+    background:rgba(250,251,248,0.88);
     backdrop-filter:blur(8px);
     border-bottom:1px solid var(--border);
   }
@@ -108,7 +108,7 @@
   .hero-photo{
     width:148px;height:148px;border-radius:50%;
     object-fit:cover;border:2px solid var(--surface-2);
-    box-shadow:0 0 0 6px rgba(134,179,102,0.08);
+    box-shadow:0 0 0 6px rgba(63,122,50,0.10);
   }
   .hero h1{font-size:2.6rem;letter-spacing:-0.01em;margin-bottom:6px;}
   .hero .role{color:var(--veg);font-size:1.05rem;margin-bottom:14px;font-family:'IBM Plex Sans';font-weight:500;}
@@ -279,7 +279,7 @@
 <header class="site-nav">
   <div class="nav-inner">
     <a class="brand" href="#top">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#1C362E"/><path d="M4 15c2-3 4-3 6-1s4 2 6-1 3-4 4-3" stroke="#86B366" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#EEF4EC"/><path d="M4 15c2-3 4-3 6-1s4 2 6-1 3-4 4-3" stroke="#3F7A32" stroke-width="1.8" stroke-linecap="round"/></svg>
       Allen Patnaik
     </a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
@@ -300,11 +300,11 @@
 
 <section class="hero" id="top">
   <svg class="hero-contours" viewBox="0 0 1100 360" preserveAspectRatio="none" aria-hidden="true">
-    <path d="M0 300 Q150 260 300 300 T600 300 T1100 260" stroke="#86B366" stroke-width="1" fill="none" opacity="0.35"/>
-    <path d="M0 320 Q150 280 300 320 T600 320 T1100 285" stroke="#86B366" stroke-width="1" fill="none" opacity="0.25"/>
-    <path d="M0 340 Q150 305 300 340 T600 340 T1100 310" stroke="#D69A54" stroke-width="1" fill="none" opacity="0.2"/>
-    <path d="M0 40 Q200 90 400 40 T800 40 T1100 70" stroke="#6DB8D8" stroke-width="1" fill="none" opacity="0.18"/>
-    <path d="M0 70 Q200 115 400 70 T800 70 T1100 100" stroke="#6DB8D8" stroke-width="1" fill="none" opacity="0.12"/>
+    <path d="M0 300 Q150 260 300 300 T600 300 T1100 260" stroke="#3F7A32" stroke-width="1" fill="none" opacity="0.28"/>
+    <path d="M0 320 Q150 280 300 320 T600 320 T1100 285" stroke="#3F7A32" stroke-width="1" fill="none" opacity="0.18"/>
+    <path d="M0 340 Q150 305 300 340 T600 340 T1100 310" stroke="#A6642A" stroke-width="1" fill="none" opacity="0.16"/>
+    <path d="M0 40 Q200 90 400 40 T800 40 T1100 70" stroke="#1479A6" stroke-width="1" fill="none" opacity="0.16"/>
+    <path d="M0 70 Q200 115 400 70 T800 70 T1100 100" stroke="#1479A6" stroke-width="1" fill="none" opacity="0.10"/>
   </svg>
   <div class="wrap-wide hero-inner">
     <img class="hero-photo" src="images/small_profile.jpg" alt="Photo of Allen Patnaik" onerror="this.style.display='none'">
