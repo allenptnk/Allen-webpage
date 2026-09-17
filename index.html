@@ -571,10 +571,16 @@
 
 <footer>
   © 2026 Allen Patnaik. Built with a hand-coded, dependency-free page — no external icon fonts required.
-  <div class="visitor-badge">
-    <img src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fallenptnk.github.io%2FAllen-webpage%2F&label=Visitors&icon=github&color=%23198754&message=&style=flat&tz=UTC">
-  </div>
+  <div class="visitor-badge">Visitors: <span id="stats">—</span></div>
 </footer>
+ 
+<script data-goatcounter="https://allenpatnaik.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>
+  fetch('https://allenpatnaik.goatcounter.com/counter/' + encodeURIComponent(location.pathname || '/') + '.json')
+    .then(function(r){ return r.json(); })
+    .then(function(d){ document.querySelector('#stats').innerText = d.count; })
+    .catch(function(){ document.querySelector('#stats').innerText = '—'; });
+</script>
 
 <script>
   var toggle = document.getElementById('navToggle');
