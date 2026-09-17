@@ -571,15 +571,23 @@
 
 <footer>
   © 2026 Allen Patnaik. Built with a hand-coded, dependency-free page — no external icon fonts required.
-  <div class="visitor-badge">Visitors: <span id="stats">—</span></div>
-</footer>
- 
-<script data-goatcounter="https://allenpatnaik.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<div class="visitor-badge">
+    Visitors: <span id="stats"></span>
+</div>
+
+<script
+    data-goatcounter="https://allenpatnaik.goatcounter.com/count"
+    src="//gc.zgo.at/count.js">
+</script>
+
 <script>
-  fetch('https://allenpatnaik.goatcounter.com/counter/' + encodeURIComponent(location.pathname || '/') + '.json')
-    .then(function(r){ return r.json(); })
-    .then(function(d){ document.querySelector('#stats').innerText = d.count; })
-    .catch(function(){ document.querySelector('#stats').innerText = '—'; });
+    if (window.goatcounter && window.goatcounter.visit_count) {
+        window.goatcounter.visit_count({
+            append: '#stats',
+            path: 'TOTAL',
+            no_branding: true
+        });
+    }
 </script>
 
 <script>
