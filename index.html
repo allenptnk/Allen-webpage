@@ -575,19 +575,22 @@
     Visitors: <span id="stats"></span>
 </div>
 
-<script
-    data-goatcounter="https://allenpatnaik.goatcounter.com/count"
-    src="//gc.zgo.at/count.js">
-</script>
-
 <script>
+var t = setInterval(function() {
     if (window.goatcounter && window.goatcounter.visit_count) {
+        clearInterval(t);
+
         window.goatcounter.visit_count({
-            append: '#stats',
-            path: 'TOTAL',
-            no_branding: true
+            append: '#stats'
         });
     }
+}, 100);
+</script>
+
+<script
+    data-goatcounter="https://allenpatnaik.goatcounter.com/count"
+    async
+    src="//gc.zgo.at/count.js">
 </script>
 
 <script>
